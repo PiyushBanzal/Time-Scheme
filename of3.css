@@ -1,0 +1,213 @@
+:root {
+	--1: #180707;
+	--2: #1F2937;
+	--3: #111827;
+	--4: #869bc7;
+	--5: #10dc4a;
+	--6: #8B5CF6;
+	--7: #EEE;
+	--8: rgb(181, 25, 25);
+	--9: rgb(142, 11, 142);
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	/* background-color: var(--1); */
+	background-image: linear-gradient(45deg,#141e30 , #243b55);
+  
+}
+
+header {
+    padding: 2rem 2rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+    
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: var(--4);
+	margin-bottom: 1rem;
+}
+
+#new-task-form {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: var(--2);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--7);
+	font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+	color: var(--4);
+}
+
+#new-task-submit {
+	color: var(--5);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--5), var(--6));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#new-task-submit:hover {
+	opacity: 0.8;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+    font-size: 1.5rem;
+	font-weight: 300;
+	color: var(--4);
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--3);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: var(--7);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: var(--5);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+	background-image: linear-gradient(to right, var(--5), var(--6));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+	background-image: linear-gradient(to right, var(--8), var(--9));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+} 
+
+.btt.btn{
+	color: #10dc4a;
+	background-color: aqua;
+}
+.btn{
+	color: #550707;
+	/* padding: 800rem; */
+	text-shadow: #0e401c;
+	text-align: center;
+	background-color: #93bed4 ;
+	width: 100%;
+	max-width: 360px;
+	margin: 15rem 85rem;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+}
+
+.btn1{
+	color: #550707;
+	/* padding: 800rem; */
+	text-shadow: #0e401c;
+	text-align: center;
+	background-color: #93bed4 ;
+	width: 100%;
+	max-width: 360px;
+	margin: 15rem 85rem;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+}
+
+.btt1{
+	margin: 0rem -3rem;
+}
+.btt{
+	margin: 2.4rem -0.2rem;
+}
+
+.backbtt{
+	text-decoration: none;
+	text-decoration-line: none;
+	font-size: 2rem;
+	/* margin: 15rem; */
+	/* margin-right: 15rem; */
+	/* text-align: ; */
+	/* margin: 30rem; */
+	/* margin: 20rem; */
+	/* margin-right: -50rem; */
+}
